@@ -5,5 +5,5 @@ def short_fio(user_str):
         return new_fio
 
 
-user_str = input(str("Введите ФИО полностью: "))
+user_str = str(input("Введите ФИО полностью: "))
 print(short_fio(user_str))

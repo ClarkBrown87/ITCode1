@@ -6,7 +6,7 @@ def unique_numbers(our_str):
             return False
     return True
 
-user_str = input(str("Введите строку: "))
+user_str = str(input("Введите строку: "))
 if unique_numbers(user_str):
     print("Все числа в строке уникальны")
 else:

@@ -16,5 +16,5 @@ def find_word(our_str):
     return count_word
 
 
-user_str = input(str("Введите строку: "))
+user_str = str(input("Введите строку: "))
 print(find_word(user_str))

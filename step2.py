@@ -4,5 +4,5 @@ def my_replace(our_str):
     if first > 0 < last: return our_str[0:first + 1] + our_str[first + 1:last].replace('h', 'H') + our_str[last:]
 
 
-user_str = input(str("Введите строку: "))
+user_str = str(input("Введите строку: "))
 print(my_replace(user_str))

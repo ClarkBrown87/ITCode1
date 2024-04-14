@@ -6,5 +6,5 @@ def replace_words(our_str):
         print("Количество слов не 2")
 
 
-user_str = input(str("Введите 2 слова: "))
+user_str = str(input("Введите 2 слова: "))
 print(replace_words(user_str))
