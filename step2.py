@@ -1,6 +1,7 @@
 def my_replace(our_str):
-    our_str = str(our_str)
-    return our_str[0] + our_str[1:-1].replace('h', 'H') + our_str[-1]
+    first = our_str.find('h')
+    last = our_str.rfind('h')
+    if first > 0 < last: return our_str[0:first + 1] + our_str[first + 1:last].replace('h', 'H') + our_str[last:]
 
 
 user_str = input(str("Введите строку: "))
