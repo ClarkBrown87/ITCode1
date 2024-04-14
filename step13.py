@@ -6,11 +6,11 @@ def print_peoples(my_set):
 students = {'Schultz', 'Django', 'Brunhilde', 'Fritz'}
 employees = {'Schultz', 'Django', 'Calvin', 'Butch', 'Fritz'}
 
-all_people = students | employees
-st_emp = students & employees
-only_emp = employees - students
-only_st = students - employees
-only = only_emp | only_st
+all_people = students | employees   #students.union(employees)
+st_emp = students & employees       #students.intersect(employees)
+only_emp = employees - students     #employees.difference(students)
+only_st = students - employees      #students.difference(employees)
+only = only_emp | only_st           #only_emp.union(only_st)
 
 print("Все люди: ", end='')
 print_peoples(all_people)
